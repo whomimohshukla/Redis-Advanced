@@ -1,27 +1,37 @@
 {
   "name": "redis",
   "version": "1.0.0",
-  "description": "",
+  "description": "Redis learning project with TypeScript",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/whomimohshukla/Redis-Advanced.git"
   },
-  "keywords": [],
+  "keywords": [
+    "redis",
+    "typescript",
+    "nodejs"
+  ],
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/whomimohshukla/Redis-Advanced/issues"
   },
   "homepage": "https://github.com/whomimohshukla/Redis-Advanced#readme",
+  "engines": {
+    "node": ">=22.22.2 || >=24.15.0"
+  },
   "dependencies": {
     "redis": "^6.2.1"
   },
   "devDependencies": {
-    "@types/node": "^26.2.0",
-    "tsx": "^4.23.12",
-    "typescript": "^7.0.2"
+    "@types/node": "^22.15.10",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
   }
 }
